@@ -16,10 +16,10 @@ library(owce)
 
 set.seed(123)
 data <- data.frame(
-  E = X1+X2+rnorm(200),
   X1 = rnorm(200),
   X2 = rnorm(200)
 )
+data$E<-data$X1+data$X2+rnorm(200)
 
 result <- owce_weight(data)
 head(result)
