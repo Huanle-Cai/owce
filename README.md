@@ -16,7 +16,7 @@ library(owce)
 
 set.seed(123)
 data <- data.frame(
-  E = rnorm(200),
+  E = X1+X2+rnorm(200),
   X1 = rnorm(200),
   X2 = rnorm(200)
 )
